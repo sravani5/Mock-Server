@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<edmx:Edmx Version="1.0" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+	xmlns:edmanno="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="DemoModel" xml:lang="en">
+			<EntityType Name="Client">
+				<Key>
+					<PropertyRef Name="Client"/>
+				</Key>
+				<Property Name="Client" Type="Edm.String" Nullable="false"/>
+				<Property Name="ClientName" Type="Edm.String" Nullable="false"/>
+				<Property Name="ClientIDOverride" Type="Edm.String" Nullable="false"/>
+				<Property Name="LawFirmName" Type="Edm.String" Nullable="false"/>
+				<Property Name="eBillClientName" Type="Edm.String" Nullable="false"/>
+				<Property Name="eBillVendor" Type="Edm.String" Nullable="false"/>
+				<Property Name="Opendate" Type="Edm.DateTime"/>
+			</EntityType>
+			<EntityType Name="Matter">
+				<Key>
+					<PropertyRef Name="Matter"/>
+				</Key>
+				<Property Name="Matter" Type="Edm.String" Nullable="false"/>
+				<Property Name="MatterName" Type="Edm.String" Nullable="false"/>
+				<Property Name="Client" Type="Edm.String" Nullable="false"/>
+				<Property Name="ClientMatterID" Type="Edm.String" Nullable="false"/>
+				<Property Name="ProfessionalEmail" Type="Edm.String" Nullable="false"/>
+				<Property Name="InvoiceDesc" Type="Edm.String" Nullable="false"/>
+				<Property Name="MatterIDOverride" Type="Edm.String" Nullable="false"/>
+				<Property Name="ClaimNo" Type="Edm.String" Nullable="false"/>
+				<Property Name="InsuredName" Type="Edm.String" Nullable="false"/>
+				<Property Name="BillingMethod" Type="Edm.String" Nullable="false"/>
+				<Property Name="eBill Vendor" Type="Edm.String" Nullable="false"/>
+				<Property Name="MatterState" Type="Edm.String" Nullable="false"/>
+				<Property Name="SetSpecialist" Type="Edm.String" Nullable="false"/>
+				<Property Name="ClientIDOverride" Type="Edm.String" Nullable="false"/>
+				<Property Name="LawFirmName" Type="Edm.String" Nullable="false"/>
+				<Property Name="eBillClientName" Type="Edm.String" Nullable="false"/>
+				<Property Name="eBillVendor" Type="Edm.String" Nullable="false"/>
+				<Property Name="LawFirmNo" Type="Edm.String" Nullable="false"/>
+				<Property Name="DivisionOffice" Type="Edm.String" Nullable="false"/>
+				<Property Name="LOBCode" Type="Edm.String" Nullable="false"/>
+				<Property Name="ClaimHandler" Type="Edm.String" Nullable="false"/>
+				<Property Name="ClaimantName" Type="Edm.String" Nullable="false"/>
+				<Property Name="Division" Type="Edm.String" Nullable="false"/>
+				<Property Name="CaseLevelID" Type="Edm.String" Nullable="false"/>
+				<Property Name="DateofLoss" Type="Edm.String" Nullable="false"/>
+				<Property Name="eBillLocation" Type="Edm.String" Nullable="false"/>
+				<Property Name="DraftBillNumber" Type="Edm.String" Nullable="false"/>
+				<Property Name="Invoice" Type="Edm.String" Nullable="false"/>
+				<Property Name="DraftBillAmount" Type="Edm.String" Nullable="false"/>
+				<Property Name="InvoiceAmount" Type="Edm.String" Nullable="false"/>
+			</EntityType>
+			<EntityContainer Name="DemoEntities" edmanno:LazyLoadingEnabled="true" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="ClientSet" EntityType="DemoModel.Client"/>
+				<EntitySet Name="MatterSet" EntityType="DemoModel.Matter"/>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

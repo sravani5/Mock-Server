@@ -1,0 +1,18 @@
+<mvc:View controllerName="testZPRS_MOCKSERVER.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:smartField="sap.ui.comp.smartfield" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="ClientSet">
+						<smartFilterBar:controlConfiguration>
+							<smartFilterBar:ControlConfiguration key="Client" visibleInAdvancedArea="true" label="Client"/>
+							<smartFilterBar:ControlConfiguration key="ClientName" visibleInAdvancedArea="true" label="Client Name"/>
+							<smartFilterBar:ControlConfiguration key="Opendate" label="Open Date" filterType="single" visibleInAdvancedArea="true" controlType="date"/>
+						</smartFilterBar:controlConfiguration>
+					</smartFilterBar:SmartFilterBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

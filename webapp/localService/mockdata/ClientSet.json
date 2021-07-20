@@ -1,0 +1,15 @@
+[{
+	"Client": "10001",
+	"ClientName": "Two Sigma Investments",
+	"ClientIDOverride": "10005",
+	"LawFirmName": "Freeman Mathis & Gary, LLP",
+	"eBillClientName": "Two Sigma Investments",
+	"eBillVendor": "Collaborati"
+}, {
+	"Client": "10002",
+	"ClientName": "BNY",
+	"ClientIDOverride": "10006",
+	"LawFirmName": "Freeman Mathis & Gary, LLP",
+	"eBillClientName": "Bank of New York",
+	"eBillVendor": "CounselLink"
+}]
